@@ -37,6 +37,41 @@ The bot will use pythons DateTime library to assist with past due, current, and 
 
 Discuss what you need to develop this project. This includes background information you will need to acquire, hardware resources, and software resources. If these are not part of the standard Computer Science Department lab resources, these must be identified early and discussed with the instructor.
 
+## UML Class Diagram
+
+```mermaid
+classDiagram
+    main --> datetime
+    main --> discord
+    class datetime{
+
+    }
+    class discord{
+
+    }
+   
+    class main{
+        +String response
+        +String megaText 
+        +int eventsFound
+        +String addtoOutput
+        +date today
+        +date todaysCalanderWeek
+        +date eventsCalenderWeek
+    }
+```
+
+## UML Sequence Diagram
+```mermaid
+sequenceDiagram
+actor User
+autonumber
+User->>Discord: TypeCommand()
+Discord->>Bot: RecievesCommand()
+Bot->>Discord: Replies()
+Discord->>User: SeesInfo()
+```
+
 ## Collaborators
 
 [//]: # ( readme: collaborators -start )
