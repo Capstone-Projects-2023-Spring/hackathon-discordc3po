@@ -21,7 +21,7 @@ This document proposes a novel application of a discord bot to assist with event
 
 ## High Level Requirement
 
-The discord bot will pull scheduled events from Prof. Ians API and provide the results to the channel in disord.
+The discord bot will pull scheduled events from Prof. Ians API and provide the results to the channel in discord.
 
 ## Conceptual Design
 
